@@ -1,6 +1,11 @@
-data/
-logs/
-checkpoints/
+data/SogouNews/*
+data/TwentyNews/*
+!data/SogouNews/.gitkeep
+!data/TwentyNews/.gitkeep
+logs/*
+checkpoints/*
+!checkpoints/.gitkeep
+!logs/.gitkeep
 fonts/
 utils/visual.py
 
