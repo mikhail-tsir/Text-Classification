@@ -11,6 +11,8 @@ cudnn.benchmark = True  # set to true only if inputs to model are fixed size; ot
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 def set_trainer(config):
+    print("Printing Config:")
+    print(config)
     # load a checkpoint
     if config.checkpoint is not None:
         # load data
