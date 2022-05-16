@@ -16,11 +16,11 @@ min_word_count: 5
 # word embeddings parameters
 emb_pretrain: False  # false: initialize embedding weights randomly
                     # true: load pre-trained word embeddings
-# emb_folder: /Users/zou/Renovamen/Developing/Text-Classification/data/glove  # only makes sense when `emb_pretrain: True`
-# emb_filename: glove.6B.300d.txt  # only makes sense when `emb_pretrain: True`
-# emb_size: 256  # word embedding size
-#                # only makes sense when `emb_pretrain: False`
-# fine_tune_word_embeddings: True  # fine-tune word embeddings?
+ emb_folder: /home/mtsirlin/scratch/hedwig-data/embeddings/word2vec  # only makes sense when `emb_pretrain: True`
+ emb_filename: GoogleNews-vectors-negative300.txt  # only makes sense when `emb_pretrain: True`
+ emb_size: 256  # word embedding size
+                # only makes sense when `emb_pretrain: False`
+ fine_tune_word_embeddings: False  # fine-tune word embeddings?
 
 # model parameters
 word_rnn_size: 50  # word RNN size
