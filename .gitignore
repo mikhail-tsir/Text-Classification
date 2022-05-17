@@ -1,7 +1,5 @@
-data/SogouNews/*
-data/TwentyNews/*
-!data/SogouNews/.gitkeep
-!data/TwentyNews/.gitkeep
+data/**
+!**/.gitkeep
 logs/*
 checkpoints/*
 !checkpoints/.gitkeep
