@@ -157,7 +157,14 @@ class Trainer:
                 scores = self.model(sentences, words_per_sentence)  # (batch_size, n_classes)
 
             # calc loss
-            loss = self.loss_function(scores, labels)  # scalar
+            try:
+                loss = self.loss_function(scores, labels)  # scalar
+            except IndexError:
+                print("Index error encountered, skipping batch")
+                continue
+            except RuntimeError:
+                print("Runtime error encountered, skipping batch")
+                continue
 
             # backward
             self.optimizer.zero_grad()
