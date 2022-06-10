@@ -37,7 +37,7 @@ checkpoint_basename: checkpoint_han_dbpedia_50shot_1  # basename of the checkpoi
 
 # training parameters
 start_epoch: 0  # start at this epoch
-batch_size 8  # batch size
+batch_size: 8  # batch size
 lr: 0.001  # learning rate
 lr_decay: 0.3  # a factor to multiply learning rate with (0, 1)
 workers: 4  # number of workers for loading data in the DataLoader
