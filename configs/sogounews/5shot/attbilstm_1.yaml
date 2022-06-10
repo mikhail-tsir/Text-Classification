@@ -13,7 +13,7 @@ word_limit: 200
 min_word_count: 5
 
 # word embeddings parameters
-emb_pretrain: True  # false: initialize embedding weights randomly
+emb_pretrain: False  # false: initialize embedding weights randomly
                     # true: load pre-trained word embeddings
 emb_folder: /home/mtsirlin/scratch/hedwig-data/embeddings/word2vec  # only makes sense when `emb_pretrain: True`
 emb_filename: GoogleNews-vectors-negative300.txt  # only makes sense when `emb_pretrain: True`
