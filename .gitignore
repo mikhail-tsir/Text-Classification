@@ -1,6 +1,7 @@
 
 !**/.gitkeep
 !.gitkeep
+data/*
 !data/**/.gitkeep
 logs/*
 checkpoints/*
